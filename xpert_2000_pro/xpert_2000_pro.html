@@ -1,0 +1,398 @@
+<HTML>
+<HEAD>
+<TITLE>ati 7 button master</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (ati 7 button master.psd) -->
+
+<SCRIPT LANGUAGE="javascript" SRC="Cult3D.js"></SCRIPT>
+<SCRIPT LANGUAGE=javascript>
+<!--
+function triggerf1()
+{
+	var success = Cult3D.triggerEvent("f1");
+	if (!success)
+		alert("f1");
+}
+
+function triggerf2()
+{
+	var success = Cult3D.triggerEvent("f2");
+	if (!success)
+		alert("f2");
+}
+
+function triggerf3()
+{
+	var success = Cult3D.triggerEvent("f3");
+	if (!success)
+		alert("Error couldnt find the Event f3");
+}
+
+function triggerf4()
+{
+	var success = Cult3D.triggerEvent("f4");
+	if (!success)
+		alert("Error couldnt find the Event f4");
+}
+
+function triggerf5()
+{
+	var success = Cult3D.triggerEvent("f5");
+	if (!success)
+		alert("Error couldnt find the Event f5");
+}
+
+function triggerf6()
+{
+	var success = Cult3D.triggerEvent("f6");
+	if (!success)
+		alert("Error couldnt find the Event f6");
+}
+
+function triggerf7()
+{
+	var success = Cult3D.triggerEvent("f7");
+	if (!success)
+		alert("Error couldnt find the Event f7");
+}
+
+function triggerf8()
+{
+	var success = Cult3D.triggerEvent("f8");
+	if (!success)
+		alert("Error couldnt find the Event f8");
+}
+
+
+function triggerStartRot()
+{
+	var success = Cult3D.triggerEvent("startrotation");
+	if (!success)
+		alert("Error couldnt find the Event startrotation");
+}
+function triggerStopRot()
+{
+	var success = Cult3D.triggerEvent("stoprotation");
+	if (!success)
+		alert("Error couldnt find the event stoprotation");
+}
+
+function triggerZoomIn()
+{
+	var success = Cult3D.triggerEvent("zoomin");
+	if (!success)
+		alert("Error couldnt find the Event zoomin");
+}
+
+function triggerZoomOut()
+{
+	var success = Cult3D.triggerEvent("zoomout");
+	if (!success)
+		alert("Error couldnt find the Event zoomout");
+}
+function triggerReset()
+{
+	var success = Cult3D.triggerEvent("reset");
+	if (!success)
+		alert("Error couldnt find the Event reset");
+}
+
+function enableButtons()
+{
+
+	Cult3D=new Cult3D_Object("Cult3D");
+	document.myForm.StartRot.disabled=false;
+	document.myForm.StopRot.disabled=false;
+}
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		C_reset_over = newImage("images/C_reset-over.gif");
+		ati_6_button_master_08_C_rotatestop_over = newImage("images/ati-6-button-master_08-C_ro.gif");
+		F1_cpu_over = newImage("images/F1_cpu-over.gif");
+		F2_mem_over = newImage("images/F2_mem-over.gif");
+		C_zoomin_over = newImage("images/C_zoomin-over.gif");
+		F3_vga_over = newImage("images/F3_vga-over.gif");
+		C_zoomout_over = newImage("images/C_zoomout-over.gif");
+		F4_tvout_over = newImage("images/F4_tvout-over.gif");
+		C_rotate_over = newImage("images/C_rotate-over.gif");
+		F5_rage_over = newImage("images/F5_rage-over.gif");
+		C_rotatestop_over = newImage("images/C_rotatestop-over.gif");
+		F6_videoin_over = newImage("images/F6_videoin-over.gif");
+		F7_dvi_over = newImage("images/F7_dvi-over.gif");
+		F8_vgadvi_over = newImage("images/F8_vgadvi-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+//-->
+</SCRIPT>
+<!-- End Preload Script -->
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();MM_preloadImages('images/C_reset-over.gif','images/info_reset.gif','images/C_zoomin-over.gif','images/info_zoomin.gif','images/C_zoomout-over.gif','images/info_zoomout.gif','images/C_rotatestop-over.gif','images/info_rot.gif','images/info_rotstop.gif','images/C_rotate-over.gif','images/F1_cpu-over.gif','images/F2_mem-over.gif','images/F3_vga-over.gif')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="images/background.gif">
+<TABLE WIDTH=495 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG SRC="images/ati-6-button-master_01.gif" WIDTH=495 HEIGHT=17></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=17></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="images/ati-6-button-master_03.gif" WIDTH=71 HEIGHT=20></TD>
+		
+    <TD ROWSPAN=24><object classid="clsid:31B7EB4E-8B4B-11D1-A789-00A0CC6651A8" codebase="http://www.cult3d.com/download/cult.cab" 
+width="300" height="300" name="Cult3D" align="absmiddle">
+        <param name="_cx" value="7938">
+        <param name="_cy" value="7938">
+        <param name="SRC" value="images/xpert2000.co">
+        <param name="INITROTX" value="0">
+        <param name="INITROTY" value="0">
+        <param name="INITROTZ" value="0">
+        <param name="AXIS" value>
+        <param name="RESIZE" value="0">
+        <param name="SPEED" value="0">
+        <param name="BGCOLOR" value>
+        <param name="TARGET" value>
+        <param name="LINK" value>
+        <param name="ViewFinished" value="0">
+        <param name="AntiAliasing" value="0">
+        <param name="DisableHW" value="-1">
+        <param name="FrameSkip" value="-1">
+        <param name="AntiAliasingDelay" value="2">
+        <param name="PBCOLOR" value>
+        <param name="DisablePB" value="0">
+        <embed src="images/xpert2000.co" 
+width="300" height="300" 
+pluginspage="http://www.cult3d.com/newuser/index.html" 
+type="application/x-cult3d-object" bgcolor="000000" 
+viewfinished="0" 
+antialiasing="0" 
+disablehw="1" 
+frameskip="1"
+onsceneloaded='enableButtons()' 
+antialiasingdelay="2" name="Cult3D" align="absmiddle">
+        </embed> 
+      </object> </TD>
+		<TD COLSPAN=3 ROWSPAN=2>
+			<IMG SRC="images/ati-6-button-master_05.gif" WIDTH=124 HEIGHT=23></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=20></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=27>
+			<IMG SRC="images/ati-6-button-master_06.gif" WIDTH=17 HEIGHT=366></TD>
+		
+    <TD ROWSPAN=3> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('help','','images/info_reset.gif',1)" onClick="triggerReset()"><IMG NAME="C_reset" SRC="images/C_reset.gif" WIDTH=44 HEIGHT=42 BORDER=0 onMouseDown="MM_swapImage('C_reset','','images/C_reset-over.gif',1)" onMouseUp="MM_swapImgRestore()"></a></TD>
+		<TD ROWSPAN=27>
+			<IMG NAME="ati_6_button_master_08" SRC="images/ati-6-button-master_08.gif" WIDTH=10 HEIGHT=366></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=3></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=26>
+			<IMG SRC="images/ati-6-button-master_09.gif" WIDTH=14 HEIGHT=363></TD>
+		
+    <TD> <a href="#" onClick="triggerf1()"><IMG NAME="F1_cpu" SRC="images/F1_cpu.gif" WIDTH=90 HEIGHT=28 onMouseDown="MM_swapImage('F1_cpu','','images/F1_cpu-over.gif',1)" onMouseUp="MM_swapImgRestore()" border="0"></a></TD>
+		<TD ROWSPAN=26>
+			<IMG SRC="images/ati-6-button-master_11.gif" WIDTH=20 HEIGHT=363></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=28></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/ati-6-button-master_12.gif" WIDTH=90 HEIGHT=18></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/ati-6-button-master_13.gif" WIDTH=44 HEIGHT=11></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=7></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=2> <a href="#" onClick="triggerf2()"><IMG NAME="F2_mem" SRC="images/F2_mem.gif" WIDTH=90 HEIGHT=28 onMouseDown="MM_swapImage('F2_mem','','images/F2_mem-over.gif',1)" onMouseUp="MM_swapImgRestore()" border="0"></a></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=3> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('help','','images/info_zoomin.gif',1)" onClick="triggerZoomIn()"><IMG NAME="C_zoomin" SRC="images/C_zoomin.gif" WIDTH=44 HEIGHT=43 BORDER=0 onMouseDown="MM_swapImage('C_zoomin','','images/C_zoomin-over.gif',1)" onMouseUp="MM_swapImgRestore()"></a></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=24></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_17.gif" WIDTH=90 HEIGHT=17></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=17></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=3> <a href="#" onClick="triggerf3()"><img name="F3_vga" src="images/F3_vga.gif" width=90 height=28 onMouseDown="MM_swapImage('F3_vga','','images/F3_vga-over.gif',1)" onMouseUp="MM_swapImgRestore()" border="0"></a></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=2></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_19.gif" WIDTH=44 HEIGHT=13></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=13></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=3> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('help','','images/info_zoomout.gif',1)" onClick="triggerZoomOut()"><IMG NAME="C_zoomout" SRC="images/C_zoomout.gif" WIDTH=44 HEIGHT=44 BORDER=0 onMouseDown="MM_swapImage('C_zoomout','','images/C_zoomout-over.gif',1)" onMouseUp="MM_swapImgRestore()"></a></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=13></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_21.gif" WIDTH=90 HEIGHT=19></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=19></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=3>&nbsp; </TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=12></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_23.gif" WIDTH=44 HEIGHT=13></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=13></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=3> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('help','','images/info_rot.gif',1)" onClick="triggerStartRot()"><IMG NAME="C_rotate" SRC="images/C_rotate.gif" WIDTH=44 HEIGHT=44 BORDER=0 onMouseDown="MM_swapImage('C_rotate','','images/C_rotate-over.gif',1)" onMouseUp="MM_swapImgRestore()" onMouseOut="MM_swapImgRestore()"></a></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=3></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_25.gif" WIDTH=90 HEIGHT=19></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=19></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=2>&nbsp; </TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=22></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/ati-6-button-master_27.gif" WIDTH=44 HEIGHT=11></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/ati-6-button-master_28.gif" WIDTH=90 HEIGHT=17></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=5></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=3> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('help','','images/info_rotstop.gif',1)" onClick="triggerStopRot()"><img name="C_rotatestop" src="images/C_rotatestop.gif" width=44 height=44 border=0 onMouseDown="MM_swapImage('C_rotatestop','','images/C_rotatestop-over.gif',1)" onMouseUp="MM_swapImgRestore()" onMouseOut="MM_swapImgRestore()"></a></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=12></TD>
+	</TR>
+	<TR>
+		
+    <TD>&nbsp; </TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=28></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="images/ati-6-button-master_31.gif" WIDTH=90 HEIGHT=17></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=6>
+			<IMG SRC="images/ati-6-button-master_32.gif" WIDTH=44 HEIGHT=101></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=13></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=2>&nbsp; </TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=2></TD>
+	</TR>
+	<TR>
+		
+    <TD ROWSPAN=4> <IMG SRC="images/ati-6-button-master_34.gif" WIDTH=300 HEIGHT=86 name="help"></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=26></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_38.gif" WIDTH=90 HEIGHT=15></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=15></TD>
+	</TR>
+	<TR>
+		
+    <TD>&nbsp; </TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=28></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ati-6-button-master_40.gif" WIDTH=90 HEIGHT=17></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=17></TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

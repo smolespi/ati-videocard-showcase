@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<TITLE>radeon8500</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+<SCRIPT LANGUAGE="javascript" SRC="Cult3D.js"></SCRIPT>
+<SCRIPT LANGUAGE=javascript>
+
+var Cult3Dslave;
+var msgslave;
+
+
+function initslaveCult()
+{
+
+		Cult3Dslave=new Cult3D_Object("slave");
+	
+}	
+	
+function slavetriggermessage()
+{
+	var success= Cult3Dslave.triggerEvent(parent.left.msgmaster);
+	if (!success)
+		alert("Error couldnt find the event "+parent.left.msgmaster);
+		
+		
+}
+function SlaveReceivedMsg()
+	{
+			
+	msgslave = Cult3Dslave.getLastMessage();
+
+		var success = parent.left.Cult3Dmaster.triggerEvent(msgslave);
+	if (!success)
+		alert("Error couldnt find the Event ");
+			
+}
+</script>
+<SCRIPT LANGUAGE=javascript FOR=slave EVENT=OnSceneLoaded>
+
+if (isIE())
+{
+	initslaveCult();
+}
+
+</SCRIPT>
+<SCRIPT LANGUAGE=javascript FOR=slave EVENT=onsendmessage>
+
+if (isIE())
+{
+	SlaveReceivedMsg();
+}
+
+</SCRIPT>
+
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="images/right_top.gif">
+<object classid="clsid:31B7EB4E-8B4B-11D1-A789-00A0CC6651A8" codebase="http://www.cult3d.com/download/cult.cab" 
+width="2" height="2" name="slave" hspace="220" vspace="0" align="absmiddle">
+  <param name="_cx" value="7938">
+  <param name="_cy" value="7938">
+  <param name="SRC" value="images/8500sound.co">
+  <param name="INITROTX" value="0">
+  <param name="INITROTY" value="0">
+  <param name="INITROTZ" value="0">
+  <param name="AXIS" value>
+  <param name="RESIZE" value="0">
+  <param name="SPEED" value="0">
+  <param name="BGCOLOR" value>
+  <param name="TARGET" value>
+  <param name="LINK" value>
+  <param name="ViewFinished" value="0">
+  <param name="AntiAliasing" value="0">
+  <param name="DisableHW" value="-1">
+  <param name="FrameSkip" value="-1">
+  <param name="AntiAliasingDelay" value="2">
+  <param name="PBCOLOR" value>
+  <param name="DisablePB" value="0">
+  <embed src="images/8500sound.co" 
+width="2" height="2" 
+pluginspage="http://www.cult3d.com/newuser/index.html" 
+type="application/x-cult3d-object" bgcolor="000000" 
+viewfinished="0" 
+antialiasing="0" 
+disablehw="1" 
+frameskip="1" 
+onsceneloaded='initslaveCult()'
+
+antialiasingdelay="2" name="slave" hspace="220" vspace="0" align="absmiddle">
+  </embed> 
+</object>
+</BODY>
+</HTML>
